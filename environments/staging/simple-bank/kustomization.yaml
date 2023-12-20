@@ -1,0 +1,7 @@
+---
+namespace: staging
+images:
+  - name: brizaldi/simple-bank
+    newTag: 0.0.1
+resources:
+  - ../../../simple-bank-base
