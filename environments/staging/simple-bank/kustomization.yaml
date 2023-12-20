@@ -5,3 +5,10 @@ images:
     newTag: v1.0.0-pre
 resources:
   - ../../../simple-bank-base
+patches:
+  - target:
+      kind: Deployment
+    patch: |-
+      - op: add
+        path: /spec/template/spec/imagePullSecrets
+        value: [{ name: dockerconfigjson }]
