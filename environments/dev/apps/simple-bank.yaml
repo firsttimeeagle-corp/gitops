@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:firsttimeeagle-corp/simple-bank-gitops.git
+    repoURL: git@github.com:firsttimeeagle-corp/gitops.git
     targetRevision: HEAD
     path: environments/dev/simple-bank
   destination:

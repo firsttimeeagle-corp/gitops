@@ -1,1 +1,1 @@
-# simple-bank-gitops
+# gitops
