@@ -2,7 +2,7 @@
 namespace: dev
 images:
   - name: brizaldi/simple-bank
-    newTag: 0.0.1
+    newTag: sha-def8141de7db720aaa96b90ca8c2753cc8fc069a
 resources:
   - ../../../simple-bank-base
 patches:
