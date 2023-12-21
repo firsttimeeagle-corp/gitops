@@ -26,6 +26,6 @@ spec:
             - containerPort: 9090
           envFrom:
             - secretRef:
-                name: default
+                name: simple-bank-secret
       imagePullSecrets:
         - name: dockerconfigjson

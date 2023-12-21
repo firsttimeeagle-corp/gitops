@@ -5,10 +5,3 @@ images:
     newTag: v1.0.2-pre
 resources:
   - ../../../simple-bank-base
-patches:
-  - target:
-      kind: Deployment
-    patch: |-
-      - op: replace
-        path: /spec/template/spec/containers/0/envFrom/0/name
-        value: simple-bank-prod-secret
