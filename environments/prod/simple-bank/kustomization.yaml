@@ -9,9 +9,6 @@ patches:
   - target:
       kind: Deployment
     patch: |-
-      - op: add
-        path: /spec/template/spec/containers/0/env/0
-        value: [{ name: GIN_MODE }]
-      - op: add
-        path: /spec/template/spec/containers/0/env/0
-        value: [{ value: "release" }]
+      - op: replace
+        path: /spec/template/spec/containers/0/env/0/value
+        value: "release"

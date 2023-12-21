@@ -27,5 +27,8 @@ spec:
           envFrom:
             - secretRef:
                 name: simple-bank-secret
+          env:
+            - name: GIN_MODE
+              value: "debug"
       imagePullSecrets:
         - name: dockerconfigjson
