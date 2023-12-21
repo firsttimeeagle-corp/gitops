@@ -27,5 +27,3 @@ spec:
           envFrom:
             - secretRef:
                 name: simple-bank-secret
-      imagePullSecrets:
-        - name: dockerconfigjson
