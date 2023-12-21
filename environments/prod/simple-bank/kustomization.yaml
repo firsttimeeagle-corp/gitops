@@ -5,3 +5,13 @@ images:
     newTag: v1.0.2-pre
 resources:
   - ../../../simple-bank-base
+patches:
+  - target:
+      kind: Deployment
+    patch: |-
+      - op: add
+        path: /spec/template/spec/containers/0/env/0
+        value: [{ name: GIN_MODE }]
+      - op: add
+        path: /spec/template/spec/containers/0/env/0
+        value: [{ value: "release" }]
