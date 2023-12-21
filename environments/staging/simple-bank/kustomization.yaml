@@ -2,7 +2,7 @@
 namespace: staging
 images:
   - name: brizaldi/simple-bank
-    newTag: v1.0.2-pre
+    newTag: v1.0.3-pre
 resources:
   - ../../../simple-bank-base
 patches:
