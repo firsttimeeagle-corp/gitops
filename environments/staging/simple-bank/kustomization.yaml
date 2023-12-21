@@ -10,7 +10,7 @@ patches:
       kind: Deployment
     patch: |-
       - op: replace
-        path: /spec/template/spec/containers/0/envFrom/0/name
+        path: /spec/template/spec/containers/envFrom/0/name
         value: simple-bank-secret
   - target:
       kind: Deployment
