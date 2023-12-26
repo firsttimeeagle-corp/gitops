@@ -5,3 +5,10 @@ images:
     newTag: v1.0.4-pre
 resources:
   - ../../../simple-bank-base
+patches:
+  - target:
+      kind: Ingress
+    patch: |-
+      - op: replace
+        path: /spec/rules/0/host
+        value: stg.api.master.mshome.net
