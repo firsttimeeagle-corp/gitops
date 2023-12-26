@@ -2,7 +2,7 @@
 namespace: prod
 images:
   - name: brizaldi/simple-bank
-    newTag: v1.0.4
+    newTag: v1.1.1
 resources:
   - ../../../simple-bank-base
 patches:
